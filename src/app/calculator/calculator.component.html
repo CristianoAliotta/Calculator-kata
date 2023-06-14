@@ -1,0 +1,14 @@
+<form #form="ngForm">
+  <input type="number" ngModel placeholder="First Number" name="firstNumber" />
+  <input
+    type="number"
+    ngModel
+    placeholder="Second Number"
+    name="secondNumber"
+  />
+  <button type="submit" (click)="addiction()">+</button>
+  <button type="submit" (click)="subtraction()">-</button>
+  <button type="submit" (click)="multiplication()">*</button>
+  <button type="submit" (click)="division()">/</button>
+</form>
+<p>{{ result }}</p>
